@@ -14,7 +14,7 @@ describe('To test the animal adoption flow', function () {
         element(by.buttonText('CONTINUE')).click();
 
         var thankYouText = element(by.css('h1')).getText();
-        expect(thankYouText).toBe('Thank You');
+        expect(thankYouText).toBe('Thank you');
     });
     var home_page = require('../pages/home_page.js')
 
