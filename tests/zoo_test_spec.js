@@ -22,6 +22,9 @@ describe('To test the animal adoption flow', function () {
         home_page.enterFieldValue('you Will Subscribe');
         var getHomePageText = home_page.getDynamicText();
         expect(getHomePageText).toBe('you Will Subscribe');
-        home_page.clickContinue();
+        var animal_page = home_page.clickContinue();
+        animal_page.selectAnimal(2);
+     var confirm_page=animal_page.clickContinue();
+    expect(confirm_page.getTitle()).toBe('Thank you');
     });
 });
