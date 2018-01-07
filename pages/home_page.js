@@ -1,6 +1,6 @@
 var home_page=function(){
 this.enterFieldValue=function(value){
-    element(by.model('person.name')).sendKays(value);
+    element(by.model('person.name')).sendKeys(value);
 };
 
 this.getDynamicText=function(){
