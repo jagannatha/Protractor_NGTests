@@ -3,8 +3,8 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome'
     },
-    specs: ['../tests/zoo_test_spec.js'],
-
+    //specs: ['../tests/zoo_test_spec.js'],
+    specs: ['../tests/conduit_test_spec.js'],
     jasmineNodeOpts: {
         showColors: true,
         defaultTimeoutInterval: 30000
